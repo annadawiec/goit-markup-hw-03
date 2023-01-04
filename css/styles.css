@@ -10,9 +10,16 @@
   --border-color: #eeeeee;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header-style {
   background-color: var(--main-background);
   border: 1px;
+  justify-content: space-between;
+  margin-top: 32px;
+  display: flex;
 }
 
 .logo {
@@ -25,6 +32,8 @@
 
 .list {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .web-navigation {
@@ -44,6 +53,7 @@
   line-height: 16.41px;
   text-decoration: none;
   font-weight: 500;
+  justify-content: space-between;
 }
 
 .contact-links:hover {
@@ -155,6 +165,8 @@ body {
 
 .team {
   background-color: var(--team-background);
+  width: 1600px;
+  height: 648px;
 }
 
 .team-tittle {
@@ -206,4 +218,9 @@ body {
 
 .tittle {
   font-size: 44px;
+}
+
+.container {
+  max-width: 1200px;
+  display: flexbox;
 }
