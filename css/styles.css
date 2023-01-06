@@ -14,12 +14,16 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
 .header-style {
   background-color: var(--main-background);
   border: 1px;
   justify-content: space-between;
   margin-top: 32px;
-  display: flex;
 }
 
 .logo {
@@ -33,7 +37,6 @@
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
 }
 
 .web-navigation {
@@ -41,6 +44,8 @@
   font-weight: 500;
   text-decoration: none;
   line-height: 1.17;
+  color: var(--main-color);
+  justify-content: space-between;
 }
 
 .web-navigation:hover {
@@ -52,8 +57,6 @@
   font-size: 14px;
   line-height: 16.41px;
   text-decoration: none;
-  font-weight: 500;
-  justify-content: space-between;
 }
 
 .contact-links:hover {
@@ -73,7 +76,6 @@ body {
   border: none;
   width: 121px;
   height: 38px;
-  margin-top: 174px;
 }
 
 .projects-type:hover {
@@ -138,6 +140,7 @@ body {
   line-height: 1.71;
   text-decoration: none;
   color: var(--footer-mail);
+  margin-bottom: 60px;
 }
 
 .footer-phone:hover {
@@ -218,9 +221,4 @@ body {
 
 .tittle {
   font-size: 44px;
-}
-
-.container {
-  max-width: 1200px;
-  display: flexbox;
 }
