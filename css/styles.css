@@ -201,12 +201,17 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.17;
+  text-align: center;
+  margin-top: 30px;
+  margin: 0;
 }
 
 .job-position {
   font-size: 16px;
   line-height: 1.17;
   color: var(--contact-color);
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .what-we-do {
@@ -226,6 +231,7 @@ body {
   height: 50px;
   color: var(--main-background);
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .section-primary {
@@ -235,6 +241,9 @@ body {
   line-height: 1.36;
   text-align: center;
   color: var(--main-background);
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
 }
 
 .text-studio {
@@ -245,6 +254,8 @@ body {
 
 .tittle {
   font-size: 44px;
+  margin-top: 106px;
+  margin-bottom: 0px;
 }
 
 .section {
@@ -280,6 +291,10 @@ body {
 .figcaption {
   background-color: #ffffff;
   border-block: 1px;
+  padding-top: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* CSS for FOOTER below*/
