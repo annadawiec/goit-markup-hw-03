@@ -16,14 +16,23 @@
 
 .container {
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
+}
+
+/* CSS for HEADER below*/
+
+.header-container {
+  height: 80px;
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-style {
   background-color: var(--main-background);
-  border: 1px;
-  justify-content: space-between;
-  margin-top: 32px;
+  border: 1px solid #ececee;
 }
 
 .logo {
@@ -34,9 +43,20 @@
   line-height: 1.17;
 }
 
-.list {
-  list-style-type: none;
+.header-logo > .logo {
+  width: 145px;
+  height: 31px;
+  padding-left: 0;
+}
+
+.nav-menu {
   display: flex;
+  padding: 32px 0px 32px 93px;
+}
+
+.nav-menu > .list:not(:last-child) {
+  margin-right: 46px;
+  width: 254px;
 }
 
 .web-navigation {
@@ -46,22 +66,38 @@
   line-height: 1.17;
   color: var(--main-color);
   justify-content: space-between;
+  padding: 32px 0px 32px 93px;
 }
 
 .web-navigation:hover {
   color: var(--main-blue);
 }
 
-.contact-links {
+.header-email {
   color: var(--contact-color);
   font-size: 14px;
   line-height: 16.41px;
   text-decoration: none;
+  padding-left: 50px;
 }
 
-.contact-links:hover {
+.header-email:hover {
   color: var(--main-blue);
 }
+
+.header-phone {
+  color: var(--contact-color);
+  font-size: 14px;
+  line-height: 16.41px;
+  text-decoration: none;
+  margin-right: 227px;
+}
+
+.header-phone:hover {
+  color: var(--main-blue);
+}
+
+/* CSS for HEADER above*/
 
 body {
   font-family: "Roboto", sans-serif;
@@ -69,6 +105,13 @@ body {
   color: var(--main-color);
 }
 
+.list {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
 .projects-type {
   background-color: var(--team-background);
   font-size: 16px;
@@ -76,6 +119,7 @@ body {
   border: none;
   width: 121px;
   height: 38px;
+  border-radius: 4px;
 }
 
 .projects-type:hover {
@@ -91,19 +135,29 @@ body {
 }
 
 .img-frame {
-  border: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   width: 370px;
   text-align: left;
   line-height: 2;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projects {
   line-height: 1.88;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .project-category {
   color: var(--contact-color);
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
 }
 
 .web-text {
@@ -122,10 +176,118 @@ body {
   color: var(--main-background);
 }
 
+.team {
+  background-color: var(--team-background);
+  height: 648px;
+}
+
+.team-tittle {
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.employee {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.job-position {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--contact-color);
+}
+
+.what-we-do {
+  line-height: 1.17;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.order {
+  background-color: var(--main-blue);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  width: 200px;
+  height: 50px;
+  color: var(--main-background);
+  cursor: pointer;
+}
+
+.section-primary {
+  height: 600px;
+  background: var(--footer-background);
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--main-background);
+}
+
+.text-studio {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--contact-color);
+}
+
+.tittle {
+  font-size: 44px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team {
+  margin-left: 0;
+}
+
+.figure {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.figure:not(:last-child) {
+  margin-right: 0px;
+}
+
+.scope {
+  margin-right: 30px;
+}
+
+.lorem {
+  margin-right: 30px;
+  justify-content: center;
+}
+
+.figcaption {
+  background-color: #ffffff;
+  border-block: 1px;
+}
+
+/* CSS for FOOTER below*/
+
+.footer-logo {
+  width: 145px;
+  height: 31px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 .footer-mail {
@@ -133,6 +295,8 @@ body {
   line-height: 1.71;
   color: var(--footer-mail);
   text-decoration: underline;
+  width: 231px;
+  height: 21px;
 }
 
 .footer-phone {
@@ -140,7 +304,7 @@ body {
   line-height: 1.71;
   text-decoration: none;
   color: var(--footer-mail);
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-phone:hover {
@@ -160,65 +324,28 @@ body {
 }
 
 .footer-style {
-  width: 1600px;
   height: 252px;
   background: var(--footer-background);
   color: var(--main-background);
 }
 
-.team {
-  background-color: var(--team-background);
-  width: 1600px;
-  height: 648px;
+.footer-contact-mail {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+.footer-contact-phone {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.team-tittle {
-  line-height: 1.17;
-}
+/* CSS for FOOTER above*/
 
-.employee {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.17;
-}
-
-.job-position {
-  font-size: 16px;
-  line-height: 1.17;
-  color: var(--contact-color);
-}
-
-.what-we-do {
-  line-height: 1.17;
-}
-
-.order {
-  background-color: var(--main-blue);
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  width: 200px;
-  height: 50px;
-  color: var(--main-background);
-  cursor: pointer;
-}
-
-.section-primary {
-  width: 1600px;
-  height: 600px;
-  background: var(--footer-background);
-  font-weight: 900;
-  line-height: 1.36;
-  text-align: center;
-  color: var(--main-background);
-}
-
-.text-studio {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-color);
-}
-
-.tittle {
-  font-size: 44px;
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
 }
